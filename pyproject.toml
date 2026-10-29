@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "exam-predictor"
+version = "0.1.0"
+description = "Analyse Cambridge 9702 Paper 4 past papers with RAG and write a realistic practice paper with an open AI model."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "pymupdf",
+    "rank-bm25",
+    "python-docx",
+    "sentence-transformers",
+    "bitsandbytes",
+    "accelerate",
+    "transformers>=5.3",
+    "numpy",
+    "pandas",
+    "pyarrow",
+    "matplotlib",
+    "pydantic>=2",
+    "tqdm",
+]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[project.scripts]
+exam-predictor = "exam_predictor.pipeline:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+exam_predictor = ["data/*.csv"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

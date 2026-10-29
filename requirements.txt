@@ -1,0 +1,13 @@
+pymupdf
+rank-bm25
+python-docx
+sentence-transformers
+bitsandbytes
+accelerate
+transformers>=5.3
+numpy
+pandas
+pyarrow
+matplotlib
+pydantic>=2
+tqdm
