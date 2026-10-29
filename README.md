@@ -139,3 +139,5 @@ JSON. They do not need a GPU or the AI models, and they run automatically on Git
   of 40 random tags show how far to trust them. **Solve the generated paper yourself before using it.**
 - Ideas: hand-check tag accuracy, compare the backtest with random guessing, and ask a teacher to rate a mix of real
   and generated questions without knowing which is which.
+  data link
+     https://drive.google.com/drive/folders/1p70FFJCZSy9WDozTYtyRyEQS9PGZzLMV?usp=drive_link
